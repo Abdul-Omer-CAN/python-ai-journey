@@ -24,8 +24,8 @@
 # target = 20000
 # year = 0
 
-# while balance < target:
-#     balance = balance * 1.07
+# while balance < target:              # For vs while loop - Use for when you know how many times run the program
+#     balance = balance * 1.07         # Use while loop run until you hit a target which in our case was 20k
 #     year += 1
 #     print(f"Year {year}: ${balance:,.2f}")
 
