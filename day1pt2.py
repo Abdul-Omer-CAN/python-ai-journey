@@ -36,7 +36,7 @@ print(f"    Revenue    ${revenue:>12,.2f}")
 # >12 this means right align all the number to 12 characters.
 # , add comma where appropriate
 # .2f shows 2 decimal places after the number .00
-print(f"     COGS          Abdu${cogs:>12,.2f}")
+print(f"     COGS          ${cogs:>12,.2f}")
 print(f"     Gross Profit  ${gross_profit:>12,.2f}    ({gross_margin:.1%})")  # we gave instructions by adding : and .1% makes it a percentage
 print(f"     OPEX          ${opex:>12,.2f}")
 print(f"     EBIT          ${ebit:>12,.2f}")
