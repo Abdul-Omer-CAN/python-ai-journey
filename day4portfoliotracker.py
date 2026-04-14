@@ -1,25 +1,42 @@
 ## Input Section ##
 
+# portfolio = []
+
+# while True:
+#     ticker = input("Enter stock ticker (or 'done' to finish): ").upper()
+
+#     if ticker == "DONE":
+#         break
+#     try:
+#         price = float(input(f"Enter price for {ticker}: $"))
+#         quantity = int(input(f"Enter quantity for {ticker}: "))
+
+#         portfolio.append({
+#             "ticker": ticker,
+#             "price": price,
+#             "quantity": quantity
+#         })
+#         print(f"{ticker} added! ✅")
+
+#     except ValueError:
+#         print("Invalid Input - Please enter valid numbers! ")
+
+## Input section using .csv file - i deactivated the inital one you activate one or the other ##
+
+import csv
+
 portfolio = []
 
-while True:
-    ticker = input("Enter stock ticker (or 'done' to finish): ").upper()
-
-    if ticker == "DONE":
-        break
-    try:
-        price = float(input(f"Enter price for {ticker}: $"))
-        quantity = int(input(f"Enter quantity for {ticker}: "))
-
+with open("portfolio.csv", "r") as file:
+    reader = csv.reader(file)
+    next(reader)
+    for row in reader:
         portfolio.append({
-            "ticker": ticker,
-            "price": price,
-            "quantity": quantity
+            "ticker": row[0],
+            "price": float(row[1]),
+            "quantity": int(row[2])
         })
-        print(f"{ticker} added! ✅")
 
-    except ValueError:
-        print("Invalid Input - Please enter valid numbers! ")
 
 ## Process Section ##
 
