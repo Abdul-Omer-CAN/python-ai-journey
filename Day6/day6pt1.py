@@ -30,3 +30,14 @@ print(values)
 yesterday_prices = np.array([180.00, 139.50, 250.00, 375.00, 152.00])
 pct_change = ((prices - yesterday_prices) / yesterday_prices) * 100
 print(pct_change.round(2))  # .round() means round to () decimal place in our case 2
+
+# NEW NumPy fxns learnt TODAY:
+# import numpy as _____
+# np.array([...])
+# np.mean(array)
+# np.max(array)
+# np.min(array)
+# np.sum(array)
+# array.round(2)
+# array * array
+# array - array
