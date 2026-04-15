@@ -12,7 +12,7 @@ with open("portfolio.csv", "r") as file:   # "r" means open for read | "w" means
 
 
 with open("report.csv", "w", newline="") as file:           # now we are creating a new file called report.csv
-    writer = csv.writer(file)                               # creater writer object
+    writer = csv.writer(file)                               # creates writer object
     writer.writerow(["Ticker", "Price", "Quantity", "Total Value"])  # writing the first row - adding headers
     with open("portfolio.csv", "r") as portfolio:  # opens our portfolio.csv(the old one we created) for reading
         reader = csv.reader(portfolio)   # creates a reader that goes through portfolio.csv row by row
