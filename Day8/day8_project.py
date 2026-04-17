@@ -26,3 +26,14 @@ ax2.set_title("Portfolio Allocation")
 plt.suptitle("My Stock Portfolio Dashboard", fontsize=16)
 plt.tight_layout()
 plt.show()
+
+## All new functions learnt today ##
+# plt.plot() - line chart
+# plt.bar()- bie chart
+# plt.pie() - pie chart
+# plt.subplots() - multiple charts
+# plt.set_title/xlabel/ylabel - Labels
+# plt.grid() - add grid lines
+# plt.tight_layout() - spacing
+# autopct - autopercentage mostly '%1.1f%%'
+# ax1/ax2 - use functions on ax1 aka first graph or ax2 seond graph
