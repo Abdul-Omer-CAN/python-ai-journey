@@ -1,0 +1,5 @@
+ticker,sector,buy_price,quantity,live_price,current_value,cost,gain_loss,return_pct
+AAPL,Technology,190.0,10,270.23,2702.3,1900.0,802.3,42.23
+GOOGL,Technology,141.2,5,341.68,1708.4,706.0,1002.4,141.98
+TSLA,Automotive,245.8,8,400.62,3204.96,1966.4,1238.56,62.99
+MSFT,Technology,378.9,3,422.79,1268.37,1136.7,131.67,11.58
