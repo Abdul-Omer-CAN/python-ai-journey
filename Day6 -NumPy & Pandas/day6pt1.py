@@ -1,7 +1,7 @@
 # Today we learn a NumPy and Pandas
 
 # NumPy -> fast mathematical operations on array of numbers
-# Pandas -> Working with tables of data (like excel but in python)
+# Pandas -> Working with tables of data (like excel but in python) - Pandas use NumPy
 
 # import numpy as np
 # import pandas as pd
