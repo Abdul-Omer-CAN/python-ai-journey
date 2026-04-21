@@ -22,10 +22,10 @@ df["defaulted"] = ((df["credit_score"] < 550) | (df["debt_to_income"] > 0.7)).as
 
 print(df.head())  # Returns a dataframe object requires print() in =-Jupyter notebooks print() is not required for the last line of fxn.
 
-X = df[["salary", "credit_score", "loan_amount", "loan_term", "debt_to_income"]]
+X = df[["salary", "credit_score", "loan_amount", "loan_term", "debt_to_income"]]  # 5 questions that the model can ask are the variables!
 y = df["defaulted"]
 
-print(X.shape)  # Gives us the feratures of x which is 500 rows of people and 5 columns
+print(X.shape)  # Gives us the features of X - which is 500 rows of people and 5 columns
 print(y.shape)  # this wont print 1 becuase it is a series aka only a single column
 
 

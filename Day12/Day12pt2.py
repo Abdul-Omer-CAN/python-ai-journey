@@ -37,6 +37,8 @@ print(X_train.shape)
 print(X_test.shape)
 
 model = DecisionTreeClassifier(random_state=42, max_depth=3)  # Key note is that we are using DecisionTreeClassifier here not Regressor
+# Max depth limits the questions asked for e.g ask only 3 questions then make decision - Random state is basically using the same
+# results each run  and np.random.seed(42) generates same questions each run.
 model.fit(X_train, y_train)  # Learning Phase
 # ^ THIS IS THE DIFFERENCE BETWEEN TRAIN AND TEST. With train it can go back and forth and train itself!
 
@@ -55,3 +57,4 @@ plot_tree(model, max_depth=3, feature_names=["salary", "credit_score", "loan_amo
           filled=True, rounded=True)
 plt.title("Loan Default Decision Tree")
 plt.show()
+print(model.feature_importances_)  # tells us which of the df= variables matter to it in our case is credit score and debt to income.
