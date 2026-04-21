@@ -69,3 +69,11 @@ print(f"{ticker} | Live: {live_price:.2f} | Cost: {cost:.2f} | Value: {current_v
 
 results_df.to_csv("portfolio_summary.csv", index=False)
 print("Summary exported to portfolio_summary.csv")
+
+
+## Summary ##
+# Load portfolio from CSV
+# Fetch live prices via yfinance
+# Calculate returns + sector analysis with Pandas
+# Visualise with Matplotlib bar + pie charts
+# Export summary to portfolio_summary.csv
