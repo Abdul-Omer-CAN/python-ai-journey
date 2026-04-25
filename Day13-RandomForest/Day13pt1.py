@@ -30,7 +30,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 
 # Model
 
-model = RandomForestClassifier(n_estimators=500, random_state=42)
+model = RandomForestClassifier(n_estimators=500, random_state=42)  # estimators is the no. of trees in the forest.
 model.fit(X_train, y_train)    # This is waht compares the training answers with the answer sheet and learns
 
 # Evaluate X_test and X_train
@@ -61,4 +61,4 @@ print(model.max_features)     # sqrt means square root fo the amount of features
 
 
 # in line 33 adding more trees by n_estimators at one points is useless because it costs more computation time and gives you the
-# same result.
+# same result. AKA knows as Law of diminshing returns.
