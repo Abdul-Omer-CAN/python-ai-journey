@@ -51,6 +51,11 @@ print(f"Mean absolute: {mean_absolute_error(y_test, predictions):.2f}")
 print(f"Mean Squared:  {mean_squared_error(y_test, predictions):.2f}")
 print(f"RMSE: {np.sqrt(mean_squared_error(y_test, predictions)):.2f}")  # np means from the numpy tools
 
+for feature, coef in zip(model.feature_names_in_, model.coef_):   # model.feature_name_in learns the column names because of model.fit()
+    print(f"[{feature}: {coef:.2f}]")                             # the numbers the model learnt 200,15000,30000,-8000
+# print feature and coef to 2 decimal place.
+# feature is assigned to model.feature_names_in and coef is assigned to model.coef_. it loops so feature first loop might be  "size_sqft" second
+# might be coef = 200. feature second loop might be bedrooms with coef  15000 etc..
 
 # Definitions
 
@@ -58,3 +63,6 @@ print(f"RMSE: {np.sqrt(mean_squared_error(y_test, predictions)):.2f}")  # np mea
 # MAE(Mean Absolute Error) on average how many dollars off is each prediction.
 # MSE(Mean squared Error) Like MAE but squares the errors punishing the big mistakes.
 # RMSE(Root mean squared Error) square root of MSE, brings it back to dollar terms by squaring it so that its readable.
+# Gradient descent - model makes a random guess for each multiplier - checks how wrong it was and rinse and repeat adjusts accordingly in the
+# right direction repeats thousands times until error is fully minimized. like a rolling ball rolling down a hill until it reaches the lowest point
+# where it has the lowest error.
