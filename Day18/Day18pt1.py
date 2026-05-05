@@ -18,6 +18,9 @@ df = pd.DataFrame({
 })
 
 df["price"] = (df["size_sqft"] * 200) + (df["size_sqft"] ** 2 * 0.05) + noise   # '** 2* 0.05' adds a slight curve to the data.
+# the *200 is the price per sqft 200dollar per sq ft.
+# ** 2 creates the curve in the data by squaring and it creates huge number and then by multiplying it with 0.05 scales it down for realistic values.
+
 
 # Features & Targets
 
